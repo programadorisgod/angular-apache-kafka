@@ -7,7 +7,7 @@ import Article from '../../interfaces/article.interface';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <article class="card">
+    <article class="card_article">
       <header class="card_header_image">
         <img
           class="card_image"

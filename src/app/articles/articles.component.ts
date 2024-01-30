@@ -9,6 +9,7 @@ import { ArticleComponent } from '../shared/article/article.component';
   standalone: true,
   imports: [CommonModule, ArticleComponent],
   template: `
+   @defer (on viewport) {
     <main class="main_articles">
       <section class="section_main_articles">
         @for (item of listArticles; track item.id) {
@@ -18,6 +19,9 @@ import { ArticleComponent } from '../shared/article/article.component';
         }
       </section>
     </main>
+   }@placeholder {
+    <p></p>
+   }
   `,
   styleUrl: './articles.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

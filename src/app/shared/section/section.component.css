@@ -1,9 +1,9 @@
 .section {
   background: #f7f7f7;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(190px,1fr));
   height: auto;
-  gap: 10px;
+  gap: 30px;
   place-content: center;
   align-items: center;
   padding: 10px;

@@ -11,10 +11,18 @@
 
 .nav_title {
   font-size: 18px;
+  text-decoration: none;
+  color: #000;
 }
 .nav_search {
   width: 550px;
+  position: relative;
+}
+.nav_search_form {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .nav_search_input {
@@ -22,34 +30,64 @@
   height: 35px;
   border: none;
   border-right: 1px solid;
+  border-radius: 10px;
   padding-left: 10px;
   outline: none;
 }
 .nav_search_button {
-  height: 37px;
+  height: 25px;
   border: none;
+  border-radius: 50px;
+  position: absolute;
+  right: 35px;
+  background: none;
+  cursor: pointer;
 }
 
 .nav_options_users {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
 }
 .nav_options_users_signin {
   border: none;
   border-radius: 10px;
   text-wrap: nowrap;
-  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease transform 0.3s ease-in-out;
 }
+
+.nav_options_users_signin:hover p {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+.nav_options_users_signin:hover .hover_effect {
+  transform: scale(1.1);
+}
+
 .nav_options_users_favorites {
   border: none;
   border-radius: 10px;
+  cursor: pointer;
+  background: none;
 }
 .nav_options_users_car {
   border: none;
   border-radius: 10px;
+  cursor: pointer;
+  background: none;
 }
+
 @media (width < 900px) {
   .nav {
     padding: 5px;
+  }
+  .nav_search {
+    margin-bottom: 5px;
   }
 }
