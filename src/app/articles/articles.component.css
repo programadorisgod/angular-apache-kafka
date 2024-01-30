@@ -1,0 +1,7 @@
+
+
+.section_main_articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 20px 0px;
+}

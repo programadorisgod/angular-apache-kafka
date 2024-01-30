@@ -1,0 +1,22 @@
+.card_categorie {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+}
+
+.card_header {
+  width: 200px;
+}
+.card_img {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (width < 500px) {
+  .card_categorie {
+    margin: 0 auto;
+  }
+}
