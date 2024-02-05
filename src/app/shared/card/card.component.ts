@@ -6,7 +6,7 @@ import {
   inject,
 } from '@angular/core';
 import Categories from '../../interfaces/categories.interface';
-import {  Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card',
@@ -37,6 +37,6 @@ export class CardComponent {
 
   _route: Router = inject(Router);
   navigate() {
-    this._route.navigate([ this.categorie?.id]);
+    this._route.navigate([this.categorie?.id]);
   }
 }

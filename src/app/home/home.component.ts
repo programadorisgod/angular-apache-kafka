@@ -1,3 +1,4 @@
+import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { HeaderComponent } from '../shared/header/header.component';
@@ -9,7 +10,13 @@ import { CardComponent } from '../shared/card/card.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, SectionComponent, CardComponent],
+  imports: [
+    CommonModule,
+    HeaderComponent,
+    SectionComponent,
+    CardComponent,
+    RouterOutlet,
+  ],
   template: `
     <main class="main_home">
       <app-section>

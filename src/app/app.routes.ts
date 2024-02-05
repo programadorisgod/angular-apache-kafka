@@ -7,7 +7,6 @@ export const routes: Routes = [
   },
   {
     path:'tecnologia',
-    pathMatch:"full",
     loadComponent: () => import('./articles/articles.component'),
   },
   {
